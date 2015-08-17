@@ -1,0 +1,11 @@
+E:\HoanNV\DemoAll\Deployment\WcfBDSDeliveryService\WcfBDSDeliveryService.exe.config
+E:\HoanNV\DemoAll\Deployment\WcfBDSDeliveryService\WcfBDSDeliveryService.exe
+E:\HoanNV\DemoAll\Deployment\WcfBDSDeliveryService\WcfBDSDeliveryService.pdb
+E:\HoanNV\DemoAll\Deployment\WcfBDSDeliveryService\WcfBDSDeliveryService.xml
+E:\HoanNV\DemoAll\WcfBDSDeliveryService\obj\Debug\WcfBDSDeliveryService.vbprojResolveAssemblyReference.cache
+E:\HoanNV\DemoAll\WcfBDSDeliveryService\obj\Debug\WcfBDSDeliveryService.Resources.resources
+E:\HoanNV\DemoAll\WcfBDSDeliveryService\obj\Debug\WcfBDSDeliveryService.WcfServiceDemo.resources
+E:\HoanNV\DemoAll\WcfBDSDeliveryService\obj\Debug\WcfBDSDeliveryService.vbproj.GenerateResource.Cache
+E:\HoanNV\DemoAll\WcfBDSDeliveryService\obj\Debug\WcfBDSDeliveryService.exe
+E:\HoanNV\DemoAll\WcfBDSDeliveryService\obj\Debug\WcfBDSDeliveryService.xml
+E:\HoanNV\DemoAll\WcfBDSDeliveryService\obj\Debug\WcfBDSDeliveryService.pdb

@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Service_AutoRestast_Beep")> 
+<Assembly: AssemblyTitle("WcfBDSDeliveryService")> 
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("Service_AutoRestast_Beep")> 
+<Assembly: AssemblyProduct("WcfBDSDeliveryService")> 
 <Assembly: AssemblyCopyright("Copyright ©  2015")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("b4122ac6-366b-4929-a86e-7402ac54021a")> 
+<Assembly: Guid("4004660d-c320-4766-998c-cc0274f96919")> 
 
 ' Version information for an assembly consists of the following four values:
 '

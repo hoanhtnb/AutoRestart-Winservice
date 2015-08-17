@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{30DC27BB-0C17-4328-B578-D5B300C9738C}</ProjectGuid>
+    <ProjectGuid>{121EAB5A-AFB0-452D-AE26-506AFA8E3B85}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Service_AutoRestast_Beep.Service_AutoRestast_Beep</StartupObject>
-    <RootNamespace>Service_AutoRestast_Beep</RootNamespace>
-    <AssemblyName>Service_AutoRestast_Beep</AssemblyName>
+    <StartupObject>WcfServiceDemo.WcfServiceDemo</StartupObject>
+    <RootNamespace>WcfServiceDemo</RootNamespace>
+    <AssemblyName>WcfServiceDemo</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -19,8 +19,8 @@
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Service_AutoRestast_Beep.xml</DocumentationFile>
+    <OutputPath>Deployment\WcfServiceDemo\</OutputPath>
+    <DocumentationFile>WcfServiceDemo.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -30,7 +30,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Service_AutoRestast_Beep.xml</DocumentationFile>
+    <DocumentationFile>WcfServiceDemo.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -48,14 +48,16 @@
   <ItemGroup>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLL\log4net.dll</HintPath>
+      <HintPath>..\DLL\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -77,11 +79,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="Service_AutoRestast_Beep.vb">
+    <Compile Include="WcfServiceDemo.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Service_AutoRestast_Beep.Designer.vb">
-      <DependentUpon>Service_AutoRestast_Beep.vb</DependentUpon>
+    <Compile Include="WcfServiceDemo.Designer.vb">
+      <DependentUpon>WcfServiceDemo.vb</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
@@ -94,7 +96,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Service_AutoRestast_BeepInstaller.vb">
+    <Compile Include="WcfServiceDemoInstaller.vb">
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
@@ -105,9 +107,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="WcfServiceDemo.resx">
+      <DependentUpon>WcfServiceDemo.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

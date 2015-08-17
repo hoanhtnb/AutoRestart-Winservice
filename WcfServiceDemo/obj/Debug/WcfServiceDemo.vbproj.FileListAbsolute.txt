@@ -1,0 +1,5 @@
+E:\HoanNV\DemoAll\Deployment\WcfBDSDeliveryService\WcfServiceDemo.exe.config
+E:\HoanNV\DemoAll\Deployment\WcfServiceDemo\WcfServiceDemo.exe.config
+E:\HoanNV\DemoAll\Deployment\WcfServiceDemo\WcfServiceDemo.exe
+E:\HoanNV\DemoAll\Deployment\WcfServiceDemo\WcfServiceDemo.pdb
+E:\HoanNV\DemoAll\Deployment\WcfServiceDemo\WcfServiceDemo.xml

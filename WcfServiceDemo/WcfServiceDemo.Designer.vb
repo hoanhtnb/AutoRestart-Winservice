@@ -1,7 +1,7 @@
 ﻿Imports System.ServiceProcess
 
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Service_AutoRestast_Beep
+Partial Class WcfServiceDemo
     Inherits System.ServiceProcess.ServiceBase
 
     'UserService overrides dispose to clean up the component list.
@@ -28,7 +28,7 @@ Partial Class Service_AutoRestast_Beep
         '
         '   ServicesToRun = New System.ServiceProcess.ServiceBase () {New Service1, New MySecondUserService}
         '
-        ServicesToRun = New System.ServiceProcess.ServiceBase() {New Service_AutoRestast_Beep}
+        ServicesToRun = New System.ServiceProcess.ServiceBase() {New WcfServiceDemo}
 
         System.ServiceProcess.ServiceBase.Run(ServicesToRun)
     End Sub
@@ -39,10 +39,14 @@ Partial Class Service_AutoRestast_Beep
     ' NOTE: The following procedure is required by the Component Designer
     ' It can be modified using the Component Designer.  
     ' Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
-    Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
-        Me.ServiceName = "Service1"
+
+
+    <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
+        '
+        'WcfBDSDeliveryService
+        '
+        Me.ServiceName = "WcfBDSDeliveryService"
+
     End Sub
 
 End Class

@@ -1,7 +1,7 @@
 Imports System.ComponentModel
 Imports System.Configuration.Install
 
-<RunInstaller(True)> Public Class Service_AutoRestast_BeepInstaller
+<RunInstaller(True)> Public Class WcfServiceDemoInstaller
     Inherits System.Configuration.Install.Installer
 
 #Region " Component Designer generated code "
@@ -41,8 +41,8 @@ Imports System.Configuration.Install
         '
         'ServiceInstaller
         '
-        Me.ServiceInstaller.DisplayName = "Service_AutoRestast_Beep"
-        Me.ServiceInstaller.ServiceName = "Service_AutoRestast_Beep"
+        Me.ServiceInstaller.DisplayName = "WcfService Demo"
+        Me.ServiceInstaller.ServiceName = "WcfServiceDemo"
         '
         'ServiceProcessInstaller
         '
@@ -50,7 +50,7 @@ Imports System.Configuration.Install
         Me.ServiceProcessInstaller.Password = Nothing
         Me.ServiceProcessInstaller.Username = Nothing
         '
-        'Service_AutoRestast_BeepInstaller
+        'WcfBDSDeliveryServiceInstaller
         '
         Me.Installers.AddRange(New System.Configuration.Install.Installer() {Me.ServiceInstaller, Me.ServiceProcessInstaller})
     End Sub
