@@ -45,13 +45,7 @@ Public Class WcfServiceDemo
     Private Sub StartProcess()
         Try
             ''Do Work blabla :)
-
-            If CheckTime = "1" And CheckRam = "1" Then
-                LogError.log.Info("Mode Service theo ca ram va thoi gian: " & CheckRam & ":" & CheckTime)
-                Time_Process()
-                Thread_Process()
-            Else
-                If CheckTime = "1" Then
+                 If CheckTime = "1" Then
                     LogError.log.Info("Mode Service theo thoi gian: " & CheckTime)
                     Time_Process()
                 End If
@@ -59,7 +53,6 @@ Public Class WcfServiceDemo
                     LogError.log.Info("Mode Service theo ram: " & CheckRam)
                     Thread_Process()
                 End If
-            End If
             LogError.log.Info("Khoi tao Service Demo thanh cong ...." & DateTime.Now.ToString("HH:mm"))
         Catch ex As Exception
             LogError.log.Error("Loi Khoi tao Service Demo ...." & ex.Message)
